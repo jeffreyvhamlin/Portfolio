@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowDown, Download, Linkedin, Mail, Github } from 'lucide-react';
+import { ArrowDown, Download, Linkedin, Mail, Github, Bold } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Hero = () => {
@@ -39,13 +39,15 @@ const Hero = () => {
                 Jeffrey Hamlin Vinod
               </h1>
               <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-400 font-medium">
-                Data Scientist & ML Engineer
+                Data Scientist & Software Engineer
               </h2>
             </div>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              MSc Computer Science student at Trinity College Dublin, specializing in Data Science and AI. 
-              Building intelligent systems that solve real-world problems using machine learning, automation, and data analytics.
+              MSc Computer Science student at Trinity College Dublin, specializing in Data Science. 
+              Building intelligent systems that solve real-world problems using machine learning, automation and data analytics with a 
+              strong software development foundation. This personal portfolio of mine is still under development, Thank you for taking the time to look into this!
+              
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -129,6 +131,7 @@ const Hero = () => {
             <ArrowDown className="h-6 w-6" />
           </button>
         </div>
+        
       </div>
     </section>
   );

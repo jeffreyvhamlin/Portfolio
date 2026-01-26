@@ -29,34 +29,30 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      icon: TrendingUp,
-      title: 'Data Analytics & Visualization',
-      skills: ['Python', 'SQL', 'Power BI', 'D3.js', 'Microsoft Excel', 'Data Cleaning', 'EDA', 'Dashboard Design']
+      icon: Code,
+      title: 'Programming & Software Development',
+      skills: ['Python','Java','C','HTML','CSS','Bootstrap','REST APIs']
     },
     {
       icon: Brain,
-      title: 'Machine Learning & AI',
-      skills: ['Supervised/Unsupervised Learning', 'Computer Vision (YOLOv8)', 'CNNs & LSTMs', 'Sentiment Analysis', 'Model Evaluation', 'Feature Engineering']
-    },
-    {
-      icon: Code,
-      title: 'Programming & Development',
-      skills: ['Python', 'R', 'Java', 'C', 'HTML/CSS', 'Bootstrap', 'REST APIs', 'Git', 'Django']
-    },
-    {
-      icon: Workflow,
-      title: 'Automation & Workflow',
-      skills: ['UiPath Studio', 'Power Automate', 'Process Automation', 'Queue-Based Workflows', 'RPA']
+      title: 'Data Analytics Tools',
+      skills: ['Python','R','Power BI','D3.js']
     },
     {
       icon: Database,
-      title: 'Data Management',
-      skills: ['MySQL', 'SQL Server', 'MongoDB', 'Relational Databases', 'Data Modelling', 'Database Design']
+      title: 'Database Management',
+      skills: ['MySQL', 'SQL Server', 'PostgreSQL']
     },
     {
+      icon: Workflow,
+      title: 'Automation & Workflow Tools',
+      skills: ['UiPath Studio', 'Power Automate(Basic)','UiPath Cloud']
+    },
+    
+    {
       icon: Cloud,
-      title: 'Tools & Collaboration',
-      skills: ['GitHub', 'Agile Methodologies', 'Team Collaboration', 'Technical Documentation', 'G-Suite']
+      title: 'Collaboration Tools',
+      skills: ['Git','GitHub','G-Suite','Microsoft Excel']
     }
   ];
 

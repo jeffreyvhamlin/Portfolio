@@ -30,16 +30,31 @@ const Certifications = () => {
 
   const certifications = [
     {
-      title: 'Example Certification 1',
-      issuer: 'Example Organization',
-      date: 'Month Year',
+      title: 'Deep Learning Concepts Workshop',
+      issuer: 'University of Texas, Dallas',
       description: 'Brief description of what this certification covers and its relevance.',
       credentialUrl: null, // Add your credential URL here
       skills: ['Skill 1', 'Skill 2', 'Skill 3']
     },
     {
-      title: 'Example Certification 2',
-      issuer: 'Example Platform',
+      title: 'Entrepreneurship',
+      issuer: 'NPTEL',
+      
+      description: 'Brief description of certification achievements and learning outcomes.',
+      credentialUrl: null, // Add your credential URL here
+      skills: ['Skill A', 'Skill B']
+    },
+    {
+      title: 'Automation Explorer Training',
+      issuer: 'UiPath',
+      date: 'Month Year',
+      description: 'Brief description of certification achievements and learning outcomes.',
+      credentialUrl: null, // Add your credential URL here
+      skills: ['Skill A', 'Skill B']
+    },
+    {
+      title: 'Control Flow in Studio',
+      issuer: 'UiPath',
       date: 'Month Year',
       description: 'Brief description of certification achievements and learning outcomes.',
       credentialUrl: null, // Add your credential URL here
@@ -121,16 +136,7 @@ const Certifications = () => {
             ))}
           </div>
 
-          {/* Note for adding certifications */}
-          <Card className="mt-8 p-6 bg-emerald-50 dark:bg-emerald-900/10 border-2 border-emerald-200 dark:border-emerald-800">
-            <p className="text-center text-gray-700 dark:text-gray-300">
-              <strong>Note:</strong> To add your certifications, edit{' '}
-              <code className="px-2 py-1 bg-white dark:bg-gray-800 rounded text-emerald-600 dark:text-emerald-400">
-                /app/frontend/src/components/Certifications.js
-              </code>
-              {' '}and update the certifications array with your details.
-            </p>
-          </Card>
+          
         </div>
       </div>
     </section>

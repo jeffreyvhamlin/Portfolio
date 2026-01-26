@@ -160,65 +160,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Contact Form */}
-            <Card className="p-8 border-2">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Name
-                  </label>
-                  <Input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    placeholder="Your Name"
-                    className="w-full"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Email
-                  </label>
-                  <Input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    placeholder="your.email@example.com"
-                    className="w-full"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    placeholder="Your message..."
-                    rows={5}
-                    className="w-full"
-                  />
-                </div>
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
-                >
-                  <Send className="mr-2 h-5 w-5" />
-                  Send Message
-                </Button>
-              </form>
-            </Card>
+            
           </div>
         </div>
       </div>
