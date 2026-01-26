@@ -31,11 +31,11 @@ const Projects = () => {
 
   const featuredProjects = [
     {
-      title: 'Real-Time Traffic Prediction & Signaling System',
-      description: 'AI-powered traffic management system using YOLOv8 and LSTM, achieving >90% detection accuracy and reducing traffic waiting time by ~25% through real-time adaptive signaling.',
-      tags: ['YOLOv8', 'LSTM', 'Django', 'SUMO', 'Computer Vision', 'Deep Learning'],
-      impact: ['90%+ Detection Accuracy', '25% Wait Time Reduction', 'Real-time Processing'],
-      type: 'Final Year Project',
+      title: 'Personal Finance Tracker',
+      description: 'A full-stack personal finance analytics platform that ingests real-world bank transaction statements, classifies noisy transaction descriptions using NLP-based machine learning, detects spending anomalies, and generates interactive dashboards. Designed with a scalable backend, database persistence, and API-first architecture to support both single-file analysis and long-term financial insights.',
+      tags: ['FastAPI','PostgreSQL','Machine Learning','NLP','System Design','Data Visualization','D3.js'],
+      impact: ['88%+ Classification Accuracy','100× Faster Inference vs Tree Models','Multi-Month Financial Insights','Scalable API-First Architecture'],
+      type: 'End-to-End Software Project',
       link: null,
       github: null
     },
@@ -60,6 +60,16 @@ const Projects = () => {
   ];
 
   const otherProjects = [
+    
+    {
+      title: 'Real-Time Traffic Prediction & Signaling System',
+      description: 'AI-powered traffic management system using YOLOv8 and LSTM, achieving >90% detection accuracy and reducing traffic waiting time by ~25% through real-time adaptive signaling.',
+      tags: ['YOLOv8', 'LSTM', 'Django', 'SUMO', 'Computer Vision', 'Deep Learning'],
+      impact: ['90%+ Detection Accuracy', '25% Wait Time Reduction', 'Real-time Processing'],
+      type: 'Final Year Project',
+      link: null,
+      github: null
+    },
     {
       title: 'WhatsApp Message Automation',
       description: 'UiPath bot for sending personalized WhatsApp messages to multiple recipients from cloud queues, improving HR communication efficiency by 70%+.',
