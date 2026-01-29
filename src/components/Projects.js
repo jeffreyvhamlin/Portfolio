@@ -33,8 +33,8 @@ const Projects = () => {
     {
       title: 'Personal Finance Tracker',
       description: 'A full-stack personal finance analytics platform that ingests real-world bank transaction statements, classifies noisy transaction descriptions using NLP-based machine learning, detects spending anomalies, and generates interactive dashboards. Designed with a scalable backend, database persistence, and API-first architecture to support both single-file analysis and long-term financial insights.',
-      tags: ['FastAPI','PostgreSQL','Machine Learning','NLP','System Design','Data Visualization','D3.js'],
-      impact: ['88%+ Classification Accuracy','100× Faster Inference vs Tree Models','Multi-Month Financial Insights','Scalable API-First Architecture'],
+      tags: ['FastAPI', 'PostgreSQL', 'Machine Learning', 'NLP', 'System Design', 'Data Visualization', 'D3.js'],
+      impact: ['88%+ Classification Accuracy', '100× Faster Inference vs Tree Models', 'Multi-Month Financial Insights', 'Scalable API-First Architecture'],
       type: 'End-to-End Software Project',
       link: null,
       github: null
@@ -60,7 +60,7 @@ const Projects = () => {
   ];
 
   const otherProjects = [
-    
+
     {
       title: 'Real-Time Traffic Prediction & Signaling System',
       description: 'AI-powered traffic management system using YOLOv8 and LSTM, achieving >90% detection accuracy and reducing traffic waiting time by ~25% through real-time adaptive signaling.',
@@ -85,12 +85,11 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" ref={sectionRef} className="py-20 px-6 bg-white dark:bg-gray-900">
+    <section id="projects" ref={sectionRef} className="py-20 px-6 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto max-w-6xl">
         <div
-          className={`transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Featured Projects

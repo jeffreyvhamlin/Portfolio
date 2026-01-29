@@ -27,9 +27,8 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div
-            className={`space-y-6 transition-all duration-1000 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+            className={`space-y-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
           >
             <div className="space-y-2">
               <p className="text-emerald-600 dark:text-emerald-400 font-medium text-lg">
@@ -44,10 +43,10 @@ const Hero = () => {
             </div>
 
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              MSc Computer Science student at Trinity College Dublin, specializing in Data Science. 
-              Building intelligent systems that solve real-world problems using machine learning, automation and data analytics with a 
+              MSc Computer Science student at Trinity College Dublin, specializing in Data Science.
+              Building intelligent systems that solve real-world problems using machine learning, automation and data analytics with a
               strong software development foundation. This personal portfolio of mine is still under development, Thank you for taking the time to look into this!
-              
+
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -56,8 +55,8 @@ const Hero = () => {
                 className="bg-emerald-600 hover:bg-emerald-700 text-white"
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = '/jeffrey-hamlin-vinod-cv.pdf';
-                  link.download = 'Jeffrey_Hamlin_Vinod_CV.pdf';
+                  link.href = '/Jeffrey_Hamlin_CV.pdf';
+                  link.download = 'Jeffrey_Hamlin_CV.pdf';
                   link.click();
                 }}
               >
@@ -106,9 +105,8 @@ const Hero = () => {
 
           {/* Profile Image */}
           <div
-            className={`flex justify-center transition-all duration-1000 delay-300 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+            className={`flex justify-center transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
           >
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full blur-lg opacity-30 group-hover:opacity-50 transition-opacity"></div>
@@ -131,7 +129,7 @@ const Hero = () => {
             <ArrowDown className="h-6 w-6" />
           </button>
         </div>
-        
+
       </div>
     </section>
   );

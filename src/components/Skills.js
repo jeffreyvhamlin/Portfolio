@@ -31,12 +31,12 @@ const Skills = () => {
     {
       icon: Code,
       title: 'Programming & Software Development',
-      skills: ['Python','Java','C','HTML','CSS','Bootstrap','REST APIs']
+      skills: ['Python', 'Java', 'C', 'HTML', 'CSS', 'Bootstrap', 'REST APIs']
     },
     {
       icon: Brain,
       title: 'Data Analytics Tools',
-      skills: ['Python','R','Power BI','D3.js']
+      skills: ['Python', 'R', 'Power BI', 'D3.js']
     },
     {
       icon: Database,
@@ -46,23 +46,22 @@ const Skills = () => {
     {
       icon: Workflow,
       title: 'Automation & Workflow Tools',
-      skills: ['UiPath Studio', 'Power Automate(Basic)','UiPath Cloud']
+      skills: ['UiPath Studio', 'Power Automate(Basic)', 'UiPath Cloud']
     },
-    
+
     {
       icon: Cloud,
       title: 'Collaboration Tools',
-      skills: ['Git','GitHub','G-Suite','Microsoft Excel']
+      skills: ['Git', 'GitHub', 'G-Suite', 'Microsoft Excel']
     }
   ];
 
   return (
-    <section id="skills" ref={sectionRef} className="py-20 px-6 bg-gray-50 dark:bg-gray-950">
+    <section id="skills" ref={sectionRef} className="py-20 px-6 bg-white dark:bg-gray-900">
       <div className="container mx-auto max-w-6xl">
         <div
-          className={`transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Technical Skills

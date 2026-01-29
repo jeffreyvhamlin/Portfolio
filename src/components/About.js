@@ -28,12 +28,11 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="py-16 px-6 bg-white dark:bg-gray-900">
+    <section id="about" ref={sectionRef} className="py-16 px-6 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto max-w-6xl">
         <div
-          className={`transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             About Me
@@ -52,7 +51,7 @@ const About = () => {
                 <div>
                   <p className="font-semibold text-gray-900 dark:text-white">MSc Computer Science - Data Science</p>
                   <p className="text-gray-600 dark:text-gray-400">Trinity College Dublin</p>
-                  <p className="text-gray-500 dark:text-gray-500 text-xs">2025 - 2026</p>
+                  <p className="text-gray-500 dark:text-gray-500 text-xs">2025 - Present</p>
                 </div>
                 <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
                   <p className="font-semibold text-gray-900 dark:text-white">B.E. Computer Science</p>
@@ -118,11 +117,20 @@ const About = () => {
           </div>
 
           <Card className="p-8 bg-gradient-to-br from-gray-50 to-emerald-50/30 dark:from-gray-800 dark:to-emerald-900/10 border-2">
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I am an MSc Computer Science (Data Science) student at <span className="font-semibold text-emerald-600 dark:text-emerald-400">Trinity College Dublin</span> with hands-on experience in data analytics, automation, machine learning and applied AI supported by a solid foundation in software development. I am a curious and quick learner who thrives in collaborative environments, adapting easily to new challenges through clear communication and teamwork.
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+              Hi, I'm Jeffrey Hamlin Vinod, an MSc Computer Science (Data Science) student at Trinity College Dublin with a passion for building scalable, data-driven solutions that solve real-world problems. 🚀
             </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
-              I have built practical, data-driven solutions using <span className="font-semibold text-emerald-600 dark:text-emerald-400">Python, Power BI and UiPath Studio</span>, applying analytical thinking and structured problem-solving to real-world use cases. Beyond technical skills, I value giving back to the community and bring a collaborative, reliable and people-oriented approach shaped through extensive volunteering and leadership experiences.
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
+              I specialize in machine learning, data engineering and full-stack development 🧠 with hands-on experience designing end-to-end systems that bridge the gap between complex data and actionable insights. My expertise spans Python, SQL, machine learning frameworks (TensorFlow, PyTorch), data pipeline architecture and interactive visualization from concept to production deployment. What drives me is the intersection of technology and impact⚡
+            </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
+              I've built an AI-resistant CAPTCHA system achieving ~90% accuracy 🤖, optimized and deployed to edge devices (Raspberry Pi) under hardware constraints. I've engineered data platforms processing thousands of transactions to extract spending patterns and behavioral insights📊. I've developed real-time traffic prediction systems reducing congestion by 25%🚦 Each project reflects my commitment to not just solving technical challenges, but delivering systems that scale and matter.
+            </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
+              Beyond code, I believe in building teams and communities👥 As Chair of the Sports Vertical at Yi Yuva REC, I've led 50+ community programs and inspired multi-team volunteers to drive social impact🌍 I bring this same collaborative mindset of blending technical rigor with clear communication and creative problem-solving to every project and team I join. I'm currently exploring opportunities to grow my career while staying connected to my roots and supporting my family back home🏠 I'm looking to contribute my expertise in ML, data engineering and software development to organizations building transformative products at scale.
+            </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
+              When I'm not coding, you'll find me mentoring peers in competitive programming, playing football⚽ or exploring how technology can make a tangible difference in people's lives. Let's build something great together. ✨
             </p>
           </Card>
         </div>

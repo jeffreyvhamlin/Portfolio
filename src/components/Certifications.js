@@ -32,33 +32,31 @@ const Certifications = () => {
     {
       title: 'Deep Learning Concepts Workshop',
       issuer: 'University of Texas, Dallas',
-      description: 'Brief description of what this certification covers and its relevance.',
+      description: 'Hands‑on workshop covering core deep learning concepts, including neural network architectures, backpropagation, regularization, and optimization techniques for computer vision and predictive modeling tasks. Emphasized practical implementation using modern deep learning frameworks and best practices for evaluating and tuning models.',
       credentialUrl: null, // Add your credential URL here
-      skills: ['Skill 1', 'Skill 2', 'Skill 3']
+      skills: ['CNN', 'TensorFlow', 'PyTorch']
     },
     {
       title: 'Entrepreneurship',
       issuer: 'NPTEL',
-      
-      description: 'Brief description of certification achievements and learning outcomes.',
+      description: 'Certification focused on the foundations of entrepreneurship, covering opportunity identification, market analysis, business model design and basics of startup finance and growth strategy. Included case‑based assignments on validating ideas, designing value propositions and preparing basic business plans.',
       credentialUrl: null, // Add your credential URL here
-      skills: ['Skill A', 'Skill B']
     },
     {
       title: 'Automation Explorer Training',
       issuer: 'UiPath',
-      date: 'Month Year',
-      description: 'Brief description of certification achievements and learning outcomes.',
+      date: 'July 2024',
+      description: 'Training program introducing end‑to‑end automation development on the UiPath Studio, from building the first automation to handling variables, arguments, control flow and Excel/UI automation. Covered designing robust workflows, orchestrating robots and applying RPA to real‑world business processes',
       credentialUrl: null, // Add your credential URL here
-      skills: ['Skill A', 'Skill B']
+      skills: ['RPA', 'UiPath Studio']
     },
     {
       title: 'Control Flow in Studio',
       issuer: 'UiPath',
-      date: 'Month Year',
-      description: 'Brief description of certification achievements and learning outcomes.',
+      date: 'July 2024',
+      description: 'Focused module on control flow in UiPath Studio, covering the design of logical execution paths using sequences, flowcharts and state machines. Trained to implement robust decision‑making, loops, and exception‑aware flows to build maintainable and scalable automations.',
       credentialUrl: null, // Add your credential URL here
-      skills: ['Skill A', 'Skill B']
+      skills: ['UiPath Studio', 'Control Flow']
     },
     // Add more certifications as needed
   ];
@@ -67,9 +65,8 @@ const Certifications = () => {
     <section id="certifications" ref={sectionRef} className="py-20 px-6 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto max-w-6xl">
         <div
-          className={`transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Certifications
@@ -136,7 +133,7 @@ const Certifications = () => {
             ))}
           </div>
 
-          
+
         </div>
       </div>
     </section>
