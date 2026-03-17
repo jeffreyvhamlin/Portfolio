@@ -62,8 +62,9 @@ const InternExperience = () => {
   ];
 
   return (
-    <section id="experience" ref={sectionRef} className="py-20 px-6 bg-white dark:bg-gray-900">
-      <div className="container mx-auto max-w-6xl">
+    <section id="experience" ref={sectionRef} className="py-20 px-6 bg-white dark:bg-gray-900 relative overflow-hidden">
+      <div className="absolute -bottom-16 -right-16 w-80 h-80 bg-teal-400/[0.07] dark:bg-teal-500/[0.05] rounded-full blur-3xl pointer-events-none" />
+      <div className="container mx-auto max-w-6xl relative z-10">
         <div
           className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
@@ -71,13 +72,13 @@ const InternExperience = () => {
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Intern Experience
           </h2>
-          <div className="w-20 h-1 bg-emerald-600 mx-auto mb-12"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-12 rounded-full"></div>
 
           <div className="space-y-8">
             {/* Work Experience */}
             <div className="space-y-6">
               {workExperience.map((exp, index) => (
-                <Card key={index} className="p-6 border-2 hover:border-emerald-200 dark:hover:border-emerald-800 transition-colors">
+                <Card key={index} className="p-6 border-2 hover:border-emerald-200 dark:hover:border-emerald-800 transition-colors hover:shadow-lg dark:bg-gray-800/50">
                   <div className="flex items-start gap-4">
                     <div className="p-3 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg">
                       <Briefcase className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />

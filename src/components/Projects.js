@@ -86,8 +86,9 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" ref={sectionRef} className="py-20 px-6 bg-gray-50 dark:bg-gray-950">
-      <div className="container mx-auto max-w-6xl">
+    <section id="projects" ref={sectionRef} className="py-20 px-6 bg-gray-50 dark:bg-gray-950 relative overflow-hidden">
+      <div className="absolute -top-16 -left-16 w-80 h-80 bg-emerald-400/[0.07] dark:bg-emerald-500/[0.05] rounded-full blur-3xl pointer-events-none" />
+      <div className="container mx-auto max-w-6xl relative z-10">
         <div
           className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
@@ -95,14 +96,14 @@ const Projects = () => {
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Featured Projects
           </h2>
-          <div className="w-20 h-1 bg-emerald-600 mx-auto mb-12"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-12 rounded-full"></div>
 
           {/* Featured Projects */}
           <div className="space-y-8 mb-16">
             {featuredProjects.map((project, index) => (
               <Card
                 key={index}
-                className="p-8 hover:shadow-2xl transition-all duration-300 border-2 hover:border-emerald-200 dark:hover:border-emerald-800 group"
+                className="p-8 hover:shadow-2xl transition-all duration-300 border-2 hover:border-emerald-200 dark:hover:border-emerald-800 group dark:bg-gray-800/50"
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                   <div className="flex-1">
@@ -183,7 +184,7 @@ const Projects = () => {
               {otherProjects.map((project, index) => (
                 <Card
                   key={index}
-                  className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 hover:border-emerald-200 dark:hover:border-emerald-800"
+                  className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 hover:border-emerald-200 dark:hover:border-emerald-800 dark:bg-gray-800/50"
                 >
                   <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                     {project.title}

@@ -88,8 +88,9 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" ref={sectionRef} className="py-20 px-6 bg-gray-50 dark:bg-gray-950">
-      <div className="container mx-auto max-w-6xl">
+    <section id="contact" ref={sectionRef} className="py-20 px-6 bg-gray-50 dark:bg-gray-950 relative overflow-hidden">
+      <div className="absolute -top-16 -right-16 w-80 h-80 bg-emerald-400/[0.07] dark:bg-emerald-500/[0.05] rounded-full blur-3xl pointer-events-none" />
+      <div className="container mx-auto max-w-6xl relative z-10">
         <div
           className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
@@ -97,7 +98,7 @@ const Contact = () => {
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             Get In Touch
           </h2>
-          <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-6 rounded-full"></div>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
             I'm currently open to new opportunities in Software Engineering and Analytics.
             Whether you have a question or just want to say hi, feel free to reach out!
@@ -109,7 +110,7 @@ const Contact = () => {
               {contactInfo.map((info, index) => {
                 const Icon = info.icon;
                 return (
-                  <Card key={index} className="p-6 hover:shadow-lg transition-shadow border-2 hover:border-emerald-200 dark:hover:border-emerald-800 flex flex-col items-center text-center">
+                  <Card key={index} className="p-6 hover:shadow-lg transition-shadow border-2 hover:border-emerald-200 dark:hover:border-emerald-800 flex flex-col items-center text-center dark:bg-gray-800/50">
                     <div className="p-3 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg mb-4">
                       <Icon className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
                     </div>

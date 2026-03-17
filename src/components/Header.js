@@ -47,12 +47,12 @@ const Header = () => {
           : 'bg-transparent'
       }`}
     >
-      <nav className="container mx-auto px-6 py-4">
+      <nav className="container mx-auto px-6 py-5">
         <div className="flex items-center justify-between">
           {/* Logo/Name */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-xl font-bold text-gray-900 dark:text-white hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+            className="text-2xl font-bold text-gray-900 dark:text-white hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
             aria-label="Scroll to top"
           >
             JHV
@@ -64,7 +64,7 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors font-medium"
+                className="text-gray-700 dark:text-gray-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors font-medium text-[15px]"
               >
                 {item.label}
               </button>
