@@ -26,13 +26,14 @@ const Contact = () => {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const node = sectionRef.current;
+    if (node) {
+      observer.observe(node);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (node) {
+        observer.unobserve(node);
       }
     };
   }, []);
@@ -98,7 +99,7 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 bg-emerald-600 mx-auto mb-6"></div>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            I'm currently open to new opportunities in data science and machine learning.
+            I'm currently open to new opportunities in Software Engineering and Analytics.
             Whether you have a question or just want to say hi, feel free to reach out!
           </p>
 

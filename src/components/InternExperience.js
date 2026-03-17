@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Briefcase, GraduationCap } from 'lucide-react';
+import { Briefcase, ExternalLink, Github } from 'lucide-react';
 import { Card } from './ui/card';
+import { Button } from './ui/button';
 
 const InternExperience = () => {
   const sectionRef = useRef(null);
@@ -16,23 +17,40 @@ const InternExperience = () => {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const node = sectionRef.current;
+    if (node) {
+      observer.observe(node);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (node) {
+        observer.unobserve(node);
       }
     };
   }, []);
 
   const workExperience = [
     {
+      role: 'Freelance Web Developer',
+      company: 'Ananda Stores',
+      location: 'Independent',
+      period: 'Feb 2026 - Present',
+      link: 'https://ananda-stores.vercel.app/',
+      github: 'https://github.com/Jeffrey-Hamlin-V/Ananda-Stores',
+      description: 'Designed and delivered a full-stack B2B e-commerce platform for a wholesale business — a bilingual (English/Tamil) product catalogue built end-to-end from client requirements to live deployment.',
+      achievements: [
+        'Built a bilingual (English/Tamil) product catalogue using Vanilla JS, HTML5/CSS3, deployed to Vercel with Edge caching for optimised Core Web Vitals',
+        'Engineered a Node.js/Express backend with PostgreSQL, implementing JWT-based stateless authentication, bcrypt password hashing and role-based access control restricting destructive operations to admin accounts',
+        'Integrated Cloudinary via Multer for direct image uploads, built real-time inventory analytics and deployed the full stack across Vercel (frontend) and Railway (API + PostgreSQL)'
+      ]
+    },
+    {
       role: 'Frontend Developer Intern',
       company: 'Yi Chennai',
       location: 'Chennai, India',
       period: 'Aug 2023 - Oct 2023',
+      link: 'https://sam-verse.github.io/YUVA/',
+      github: 'https://github.com/Jeffrey-Hamlin-V/YuvaRec',
       description: 'Collaborated in a four-member team, taking primary responsibility for end-to-end frontend development and deployment of the Yi Yuva website.',
       achievements: [
         'Led frontend development for Yi Yuva website serving 500+ users',
@@ -92,7 +110,7 @@ const InternExperience = () => {
                       <p className="text-gray-700 dark:text-gray-300 mb-4">
                         {exp.description}
                       </p>
-                      <ul className="space-y-2">
+                      <ul className="space-y-2 mb-4">
                         {exp.achievements.map((achievement, idx) => (
                           <li key={idx} className="flex items-start text-gray-700 dark:text-gray-300">
                             <span className="text-emerald-600 dark:text-emerald-400 mr-2 mt-1">▸</span>
@@ -100,6 +118,32 @@ const InternExperience = () => {
                           </li>
                         ))}
                       </ul>
+                      {(exp.link || exp.github) && (
+                        <div className="flex gap-2">
+                          {exp.link && (
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="border-emerald-600 text-emerald-600 hover:bg-emerald-50 dark:border-emerald-400 dark:text-emerald-400 dark:hover:bg-emerald-900/20"
+                              onClick={() => window.open(exp.link, '_blank')}
+                            >
+                              <ExternalLink className="h-4 w-4 mr-2" />
+                              Live Demo
+                            </Button>
+                          )}
+                          {exp.github && (
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="border-gray-300 hover:border-emerald-600 hover:text-emerald-600 dark:border-gray-700 dark:hover:border-emerald-400 dark:hover:text-emerald-400"
+                              onClick={() => window.open(exp.github, '_blank')}
+                            >
+                              <Github className="h-4 w-4 mr-2" />
+                              Code
+                            </Button>
+                          )}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </Card>
