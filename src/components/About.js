@@ -40,6 +40,24 @@ const About = () => {
           </h2>
           <div className="w-20 h-1 bg-emerald-600 mx-auto mb-12"></div>
 
+          <Card className="p-8 bg-gradient-to-br from-gray-50 to-emerald-50/30 dark:from-gray-800 dark:to-emerald-900/10 border-2 mb-12">
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+              I'm Jeffrey Hamlin Vinod, an MSc Computer Science (Data Science) candidate at Trinity College Dublin. I build end-to-end systems — from data pipelines and REST APIs to interactive dashboards — with a focus on clean, maintainable code that ships to production.
+            </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
+              My dissertation explores reinforcement learning agent convergence. Alongside that, I designed and deployed Ananda Stores — a full-stack B2B e-commerce platform — solo, from client requirements to live deployment on Vercel and Railway.
+            </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
+              I care about writing clean code, building well-structured REST APIs, and creating D3.js dashboards that turn raw data into decisions. Whether it's a machine learning pipeline or a frontend feature, I aim for clarity and correctness over cleverness.
+            </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
+              Outside of engineering, I led 50+ community events as Chair of the Sports Vertical at Yi Yuva REC — coordinating volunteers, managing logistics, and driving social impact across placement guidance, fundraisers, and awareness campaigns.
+            </p>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
+              I'm actively seeking graduate software engineering or data science roles in Dublin, where I can contribute to products that matter while continuing to grow as an engineer.
+            </p>
+          </Card>
+
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <Card className="p-6 hover:shadow-xl transition-shadow duration-300 border-2 hover:border-emerald-200 dark:hover:border-emerald-800">
               <div className="flex items-center gap-4 mb-4">
@@ -72,19 +90,19 @@ const About = () => {
               <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-400 mr-2">•</span>
-                  <span>90%+ accuracy in Traffic AI system</span>
+                  <span>MSc TCD - on track for First Class Honours</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-400 mr-2">•</span>
-                  <span>25% reduction in traffic wait time</span>
+                  <span>Shipped Ananda Stores - full-stack B2B platform, solo end-to-end</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-400 mr-2">•</span>
-                  <span>70%+ efficiency gain in automation</span>
+                  <span>Completed NeetCode 75</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-400 mr-2">•</span>
-                  <span>Led 150+ member team at Recharge Fest</span>
+                  <span>Frontend Developer Intern - Yi Chennai</span>
                 </li>
               </ul>
             </Card>
@@ -99,41 +117,23 @@ const About = () => {
               <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-400 mr-2">•</span>
-                  <span>Machine Learning & AI</span>
+                  <span>Systems Design</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-400 mr-2">•</span>
-                  <span>Data Visualization</span>
+                  <span>Competitive Programming</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-400 mr-2">•</span>
-                  <span>Community Leadership</span>
+                  <span>Fitness Technology</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-emerald-600 dark:text-emerald-400 mr-2">•</span>
-                  <span>Football (Galloping Stallions)</span>
+                  <span>Open Source & Side Projects</span>
                 </li>
               </ul>
             </Card>
           </div>
-
-          <Card className="p-8 bg-gradient-to-br from-gray-50 to-emerald-50/30 dark:from-gray-800 dark:to-emerald-900/10 border-2">
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-              Hi, I'm Jeffrey Hamlin Vinod, an MSc Computer Science (Data Science) student at Trinity College Dublin with a passion for building scalable, data-driven solutions that solve real-world problems. 🚀
-            </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
-              I specialize in machine learning, data engineering and full-stack development 🧠 with hands-on experience designing end-to-end systems that bridge the gap between complex data and actionable insights. My expertise spans Python, SQL, machine learning frameworks (TensorFlow, PyTorch), data pipeline architecture and interactive visualization from concept to production deployment. What drives me is the intersection of technology and impact⚡
-            </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
-              I've built an AI-resistant CAPTCHA system achieving ~90% accuracy 🤖, optimized and deployed to edge devices (Raspberry Pi) under hardware constraints. I've engineered data platforms processing thousands of transactions to extract spending patterns and behavioral insights📊. I've developed real-time traffic prediction systems reducing congestion by 25%🚦 Each project reflects my commitment to not just solving technical challenges, but delivering systems that scale and matter.
-            </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
-              Beyond code, I believe in building teams and communities👥 As Chair of the Sports Vertical at Yi Yuva REC, I've led 50+ community programs and inspired multi-team volunteers to drive social impact🌍 I bring this same collaborative mindset of blending technical rigor with clear communication and creative problem-solving to every project and team I join. I'm currently exploring opportunities to grow my career while staying connected to my roots and supporting my family back home🏠 I'm looking to contribute my expertise in ML, data engineering and software development to organizations building transformative products at scale.
-            </p>
-            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mt-4 text-justify">
-              When I'm not coding, you'll find me mentoring peers in competitive programming, playing football⚽ or exploring how technology can make a tangible difference in people's lives. Let's build something great together. ✨
-            </p>
-          </Card>
         </div>
       </div>
     </section>

@@ -61,21 +61,6 @@ const InternExperience = () => {
     }
   ];
 
-  const workshops = [
-    {
-      title: 'Deep Learning Concepts Workshop',
-      organization: 'University of Texas, Dallas',
-      instructor: 'Dr. Richard K. Min',
-      period: 'August 2024',
-      description: 'Gained foundational knowledge in deep learning covering neural networks, backpropagation and model optimization.',
-      achievements: [
-        'Completed hands-on training using Iris and Fashion MNIST datasets',
-        'Strengthened understanding of advanced ML concepts',
-        'Applied practical deep learning techniques to real-world datasets'
-      ]
-    }
-  ];
-
   return (
     <section id="experience" ref={sectionRef} className="py-20 px-6 bg-white dark:bg-gray-900">
       <div className="container mx-auto max-w-6xl">
@@ -90,7 +75,7 @@ const InternExperience = () => {
 
           <div className="space-y-8">
             {/* Work Experience */}
-            <div>
+            <div className="space-y-6">
               {workExperience.map((exp, index) => (
                 <Card key={index} className="p-6 border-2 hover:border-emerald-200 dark:hover:border-emerald-800 transition-colors">
                   <div className="flex items-start gap-4">

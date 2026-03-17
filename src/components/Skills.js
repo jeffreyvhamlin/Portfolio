@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Code, Database, Brain, Workflow, Cloud, TrendingUp } from 'lucide-react';
+import { Code, Database, Brain, Workflow, Cloud, Server, Wrench } from 'lucide-react';
 import { Card } from './ui/card';
 
 const Skills = () => {
@@ -31,29 +31,33 @@ const Skills = () => {
   const skillCategories = [
     {
       icon: Code,
-      title: 'Programming & Software Development',
-      skills: ['Python', 'Java', 'C', 'HTML', 'CSS', 'Bootstrap', 'REST APIs']
+      title: 'Languages',
+      skills: ['Python', 'JavaScript', 'Java', 'C', 'SQL', 'HTML5', 'CSS3']
     },
     {
-      icon: Brain,
-      title: 'Data Analytics Tools',
-      skills: ['Python', 'R', 'Power BI', 'D3.js']
+      icon: Server,
+      title: 'Frontend',
+      skills: ['React', 'D3.js', 'Vanilla JS', 'Bootstrap', 'Responsive Design']
     },
     {
       icon: Database,
-      title: 'Database Management',
-      skills: ['MySQL', 'SQL Server', 'PostgreSQL']
+      title: 'Backend & Databases',
+      skills: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs', 'JWT Authentication', 'PostgreSQL', 'SQLite']
     },
     {
-      icon: Workflow,
-      title: 'Automation & Workflow Tools',
-      skills: ['UiPath Studio', 'Power Automate(Basic)', 'UiPath Cloud']
+      icon: Brain,
+      title: 'Machine Learning',
+      skills: ['TensorFlow', 'Scikit-learn', 'PyTorch', 'NumPy', 'Pandas']
     },
-
     {
       icon: Cloud,
-      title: 'Collaboration Tools',
-      skills: ['Git', 'GitHub', 'G-Suite', 'Microsoft Excel']
+      title: 'DevOps & Cloud',
+      skills: ['Vercel', 'Railway', 'Cloudinary', 'Multer', 'Git', 'GitHub', 'Linux/Unix']
+    },
+    {
+      icon: Wrench,
+      title: 'Tools & Platforms',
+      skills: ['UiPath Studio', 'UiPath Cloud', 'Power Automate', 'Power BI', 'Jupyter Notebooks', 'LaTeX']
     }
   ];
 
