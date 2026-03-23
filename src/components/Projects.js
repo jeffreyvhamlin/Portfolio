@@ -32,6 +32,15 @@ const Projects = () => {
 
   const featuredProjects = [
     {
+      title: 'CharityLink',
+      description: 'A full-stack subscription-based web application combining golf performance tracking, charity fundraising and a monthly draw-based reward engine. Built end-to-end as a production-grade platform with real Stripe payment processing, Stableford score tracking via database triggers, algorithmic draw modes with automatic prize pool calculation (40% jackpot / 35% match-4 / 25% match-3), jackpot rollover, and a multi-role admin system with winner verification.',
+      tags: ['Next.js 14', 'TypeScript', 'Supabase', 'PostgreSQL', 'Stripe', 'Tailwind CSS', 'shadcn/ui', 'Framer Motion', 'Vercel'],
+      impact: ['Stripe Webhook-Driven Subscription Engine', 'Monthly Draw Engine with Jackpot Rollover', '6 Normalised PostgreSQL Tables', 'Multi-Role Admin System'],
+      type: 'Full-Stack SaaS Project',
+      link: 'https://golf-charity-platform-56gs.vercel.app/',
+      github: 'https://github.com/Jeffrey-Hamlin-V/Golf-Charity-Platform'
+    },
+    {
       title: 'Personal Finance Tracker',
       description: 'A full-stack personal finance analytics platform that ingests real-world bank transaction statements, classifies noisy transaction descriptions using NLP-based machine learning, detects spending anomalies, and generates interactive dashboards. Designed with a scalable backend, database persistence, and API-first architecture to support both single-file analysis and long-term financial insights.',
       tags: ['FastAPI', 'PostgreSQL', 'Machine Learning', 'NLP', 'System Design', 'Data Visualization', 'D3.js'],

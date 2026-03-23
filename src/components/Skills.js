@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Code, Database, Brain, Workflow, Cloud, Server, Wrench } from 'lucide-react';
+import { Code, Database, Brain, Cloud, Server, Wrench } from 'lucide-react';
 import { Card } from './ui/card';
 
 const Skills = () => {
@@ -32,17 +32,17 @@ const Skills = () => {
     {
       icon: Code,
       title: 'Languages',
-      skills: ['Python', 'JavaScript', 'Java', 'C', 'SQL', 'HTML5', 'CSS3']
+      skills: ['Python', 'JavaScript', 'TypeScript', 'Java', 'C', 'SQL', 'HTML5', 'CSS3']
     },
     {
       icon: Server,
       title: 'Frontend',
-      skills: ['React', 'D3.js', 'Vanilla JS', 'Bootstrap', 'Responsive Design']
+      skills: ['React', 'Next.js', 'D3.js', 'Vanilla JS', 'Bootstrap', 'Framer Motion', 'Responsive Design']
     },
     {
       icon: Database,
       title: 'Backend & Databases',
-      skills: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs', 'JWT Authentication', 'PostgreSQL', 'SQLite']
+      skills: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs', 'JWT Authentication', 'PostgreSQL', 'Supabase', 'Stripe', 'SQLite']
     },
     {
       icon: Brain,
