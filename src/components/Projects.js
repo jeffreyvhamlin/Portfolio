@@ -41,13 +41,13 @@ const Projects = () => {
       github: 'https://github.com/Jeffrey-Hamlin-V/Golf-Charity-Platform'
     },
     {
-      title: 'Personal Finance Tracker',
-      description: 'A full-stack personal finance analytics platform that ingests real-world bank transaction statements, classifies noisy transaction descriptions using NLP-based machine learning, detects spending anomalies, and generates interactive dashboards. Designed with a scalable backend, database persistence, and API-first architecture to support both single-file analysis and long-term financial insights.',
-      tags: ['FastAPI', 'PostgreSQL', 'Machine Learning', 'NLP', 'System Design', 'Data Visualization', 'D3.js'],
-      impact: ['88%+ Classification Accuracy', '100× Faster Inference vs Tree Models', 'Multi-Month Financial Insights', 'Scalable API-First Architecture'],
+      title: 'TableSync',
+      description: 'A real-time group dining coordination platform that manages the full lifecycle of shared restaurant experiences — from menu voting and order synchronization to payment settlement. Built with a 7-state session engine, WebSocket-driven live updates, and dual billing modes, designed to handle 40+ concurrent users with consistent, low-latency state across clients.',
+      tags: ['Next.js 14', 'TypeScript', 'Supabase', 'WebSockets', 'PostgreSQL', 'Stripe', 'System Design'],
+      impact: ['40+ Concurrent Users', '7-State Atomic Session Lifecycle', 'Dual Payment Settlement Modes', 'Real-Time Order & Vote Sync'],
       type: 'End-to-End Software Project',
-      link: null,
-      github: null
+      link: 'https://table-sync-gules.vercel.app',
+      github: 'https://github.com/Jeffrey-Hamlin-V/TableSync'
     },
     {
       title: 'EAFC 26 Footballers Rating Dashboard',
@@ -71,6 +71,15 @@ const Projects = () => {
 
   const otherProjects = [
 
+    {
+      title: 'Personal Finance Tracker',
+      description: 'A full-stack personal finance analytics platform that ingests real-world bank transaction statements, classifies noisy transaction descriptions using NLP-based machine learning, detects spending anomalies, and generates interactive dashboards. Designed with a scalable backend, database persistence, and API-first architecture to support both single-file analysis and long-term financial insights.',
+      tags: ['FastAPI', 'PostgreSQL', 'Machine Learning', 'NLP', 'System Design', 'Data Visualization', 'D3.js'],
+      impact: ['88%+ Classification Accuracy', '100× Faster Inference vs Tree Models', 'Multi-Month Financial Insights', 'Scalable API-First Architecture'],
+      type: 'End-to-End Software Project',
+      link: null,
+      github: null
+    },
     {
       title: 'Real-Time Traffic Prediction & Signaling System',
       description: 'AI-powered traffic management system using YOLOv8 and LSTM, achieving >90% detection accuracy and reducing traffic waiting time by ~25% through real-time adaptive signaling.',
